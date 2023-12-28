@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="title blue green">
+        <h1>Contact</h1>
+    </div>
+    <div class="menu">    
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Alamosa.html">Alamosa</a></li>
+            <li><a href="Colorado_Springs.html">Colorado Springs</a></li>
+            <li><a href="Denver.html">Denver</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+<div class="info">
+    <h2>For more informatoin please visit <a href="https://co.colorado.gov/" target="_blank">Colorado.gov</a></h2>
+</div>
+<div class="signup">
+    <h3>
+        To leave a comment please enter your informatoin below.
+    </h3>
+    
+        <form>
+            <label for="question">Questions?</label><br>
+            <input type="text" id="question" name="question" placeholder="Questions"><br>
+            <label for="lname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <label for="email">Email address:</label><br>
+            <input type="text" id="email" name="email" placeholder="Email Address"><br>
+            <label for="vemail">Verify Email address:</label><br>
+            <input type="text" id="vemail" name="vemail" placeholder="Re-enter Email Address"><br>
+            <input id="submit" type="button" onclick="verify()" value="submit">
+        </form>
+        <script>
+            function verify()
+          {
+          if(document.getElementById("email").value === document.getElementById("vemail").value) {
+          
+              alert("Confirmed")
+          
+          } else {
+             document.getElementById("submit").setAttribute("disabled", "disabled");
+             alert("Email does not match. Please try again")
+            }
+          
+          }
+          
+            </script>
+
+</div>
+<aside>
+    <p>All images were sourced from <a href="https://unsplash.com/" target="_blank">Unsplash.com</a></p>
+</aside>
+
+</body>
+</html>
