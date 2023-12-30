@@ -6,7 +6,12 @@
     padding: 2px;
 }
 
-  
+section {
+  margin-left: 100px;
+    text-align: left;
+    width: auto;
+    padding: 30px;
+}
 .content {
     margin-left: 100px;
     text-align: left;
@@ -32,6 +37,9 @@
     border-radius: 3px;
     padding: 40px;
     width: 600px;
+}
+td, tr {
+  border: 1px solid;
 }
 ul {
     display: block;
@@ -71,7 +79,7 @@ ul {
     margin-top: 60px;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     border: 5px solid rgb(112, 112, 113);
     background-color:lightgray;
     border-radius: 3px;
@@ -114,11 +122,27 @@ aside{
   display: block;
   position: relative;
   text-align: left;
-  margin-left:30%;
+  margin-left:25%;
   margin-top: 5%;
   border: 5px solid rgb(112, 112, 113);
   background-color: lightgrey;
   border-radius: 3px;
   padding: 40px;
   width: 600px;
+  height: 300px;
+}
+.idsel {
+  font-family: Arial, Helvetica, sans-serif
+}
+nav {
+  text-align: end;
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+}
+.contact{
+  display: block;
+  position: relative;
+  left: 250px;
+  bottom: 200px;
 }
