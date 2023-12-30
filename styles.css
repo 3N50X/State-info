@@ -135,6 +135,7 @@ aside{
   font-family: Arial, Helvetica, sans-serif
 }
 nav {
+  font-size: large;
   text-align: end;
   position: fixed;
   bottom: 0;
